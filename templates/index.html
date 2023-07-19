@@ -1,0 +1,65 @@
+<!doctyp html>
+<html>
+  
+  <head>
+    <!-- tab title --> 
+    <title>Hello World</title>
+
+    <script src="{{ url_for('static', filename='script/script.js') }}"></script>
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/style.css') }} ">
+
+  </head>
+
+  <!-- body of the page -->
+  <body>
+
+    
+    <h1 class="centerText">EP Generator</h1>
+
+    <p id="debug"></p>
+    
+    <p>An AI that interprets and translates English command to Python code</p>
+  
+    <div id="mainSection">
+      <textarea id="user_input" placeholder="Type in an idea for a program to generate a python script"></textarea>
+      
+      <input type="button" value="generate" id="generate">
+  
+      <textarea id="code_output" readonly>
+        this is generated output
+      </textarea>
+    </div>
+    
+    <div id="helpSection">
+      <button  class="close">close</button>
+      <h2>Help</h2>
+      <p>paragraph 1</p>
+      <p>paragraph 2</p>
+    </div>
+
+    <div id="aboutSection">
+      <button  class="close">close</button>
+      <h2>About</h2>
+      <h3>Introduction: </h3>
+        <p>This is a AI that helps program your idea</p>
+      <h3>About the author: </h3>
+        <p>Sunny is a high school student</p>
+    </div>
+    
+    <footer>
+      <p class="bottomText"><a href="#" id="aboutLink">About</a> | <a href="#" id="helpLink">Help</a> |  Created by Sunny Zhao</p>
+    </footer>
+    
+  </body>
+  
+  <script>
+      document.getElementById("aboutLink").onclick = showAbout;
+      document.getElementById("helpLink").onclick = showHelp;
+      document.getElementById("generate").onclick = translate;
+      var closeClassList = document.getElementsByClassName("close");
+      for(var i=0;i<closeClassList.length;i++){
+        closeClassList[i].onclick = hideAboutAndHelp;
+      }
+  </script>
+</html>

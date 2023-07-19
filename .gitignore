@@ -1,0 +1,15 @@
+/venv
+*.Field 
+*.pt
+*.lock
+*.nix 
+*.toml
+replit_zip_error_log.txt
+__pycache__
+/.replit
+/.upm
+/.DS_Store
+/.breakpoints
+/.cache/
+/.config/
+r.txt

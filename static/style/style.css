@@ -1,0 +1,55 @@
+#mainSection {
+        margin-top: 50px;
+        height : 60%;
+        display : flex;
+        background: tomato;
+        justify-content : center;
+        align-items : center;
+      }
+      
+#mainSection input {
+        margin : 20px;
+      }
+      
+      textarea {
+        resize : none;
+        width : 40%;
+        height : 100%;
+      }
+
+      #helpSection {
+          padding : 20px;
+          display : none;
+          background : #c3c8c8;
+          width : 80%;
+          position : fixed;
+          top : 50%;
+          left : 50%;
+          -webkit-transform : translate(-50%, -50%);
+          transform : translate(-50%, -50%);
+      }
+
+        
+      #aboutSection {
+          padding : 20px;
+          display : none;
+          background : #c3c8c8;
+          width : 80%;
+          position : fixed;
+          top : 50%;
+          left : 50%;
+          -webkit-transform : translate(-50%, -50%);
+          transform : translate(-50%, -50%);
+      }
+        
+.centerText {
+  margin-top: 20px;
+  text-align: center;
+  color: green;
+/*   margin-left: 10px; */
+}
+
+.bottomText {
+    position: fixed;
+    bottom: 0;
+}
